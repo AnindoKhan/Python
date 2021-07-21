@@ -1,0 +1,301 @@
+Last login: Wed Nov  4 10:53:53 on ttys000
+Anindos-MacBook-Air:~ anindokhan$ ls
+Applications				Movies
+Desktop					Music
+Documents				Pictures
+Downloads				Public
+Khan_Anindo_VS_Assignment_1.mdoc	index.html
+Library					python_stack
+Anindos-MacBook-Air:~ anindokhan$ cd Desktop/
+Anindos-MacBook-Air:Desktop anindokhan$ ls
+Coding
+Dojo_Assignments
+Screen Shot 2020-10-14 at 3.32.46 PM.png
+untitled folder
+untitled folder 2
+Anindos-MacBook-Air:Desktop anindokhan$ cd Dojo_Assignments/
+Anindos-MacBook-Air:Dojo_Assignments anindokhan$ ls
+JavaScript		Web_Fundamentals	jQuery
+Python			end of stack project
+Anindos-MacBook-Air:Dojo_Assignments anindokhan$ cd Python/
+Anindos-MacBook-Air:Python anindokhan$ ls
+Python_OOP		django			python_fundamentals
+Anindos-MacBook-Air:Python anindokhan$ cd django/
+Anindos-MacBook-Air:django anindokhan$ ls
+Dojo_Survey			counter.zip
+Dojo_Survey.zip			great_number_game
+First_Django_Project		great_number_game.zip
+First_Django_Project.zip	my_environments
+Time_Display			ninja_gold
+Time_Display.zip		users_shell
+counter
+Anindos-MacBook-Air:django anindokhan$ cd my_environments/
+Anindos-MacBook-Air:my_environments anindokhan$ source djangoPy3Env/bin/activate
+(djangoPy3Env) Anindos-MacBook-Air:my_environments anindokhan$ cd ..
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ ls 
+Dojo_Survey			counter.zip
+Dojo_Survey.zip			great_number_game
+First_Django_Project		great_number_game.zip
+First_Django_Project.zip	my_environments
+Time_Display			ninja_gold
+Time_Display.zip		users_shell
+counter
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ cd users_shell/
+(djangoPy3Env) Anindos-MacBook-Air:users_shell anindokhan$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 04, 2020 - 19:13:58
+Django version 2.2.4, using settings 'users_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[04/Nov/2020 19:14:00] "GET / HTTP/1.1" 200 7
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/users_shell/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 04, 2020 - 19:23:50
+Django version 2.2.4, using settings 'users_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/users_shell/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 04, 2020 - 19:24:09
+Django version 2.2.4, using settings 'users_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/users_shell/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 04, 2020 - 19:25:32
+Django version 2.2.4, using settings 'users_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/users_shell/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 04, 2020 - 19:26:26
+Django version 2.2.4, using settings 'users_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/users_shell/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 04, 2020 - 19:26:54
+Django version 2.2.4, using settings 'users_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/users_shell/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 04, 2020 - 19:27:01
+Django version 2.2.4, using settings 'users_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+^C(djangoPy3Env) Anindos-MacBook-Air:users_shell anindokhan$ 
+(djangoPy3Env) Anindos-MacBook-Air:users_shell anindokhan$ python manage.py makemigrations
+Migrations for 'main_app':
+  main_app/migrations/0001_initial.py
+    - Create model User
+(djangoPy3Env) Anindos-MacBook-Air:users_shell anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main_app, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying main_app.0001_initial... OK
+  Applying sessions.0001_initial... OK
+(djangoPy3Env) Anindos-MacBook-Air:users_shell anindokhan$ python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> main_app.models import 
+  File "<console>", line 1
+    main_app.models import 
+                    ^
+SyntaxError: invalid syntax
+>>> main_app.models import*
+  File "<console>", line 1
+    main_app.models import*
+                    ^
+SyntaxError: invalid syntax
+>>> main_app.models import *
+  File "<console>", line 1
+    main_app.models import *
+                    ^
+SyntaxError: invalid syntax
+>>> from main_app.models import *
+>>> User.objects.create(first_name = "Anindo", last_name = "khan", email_adress = "blah@gmail.com", age = 12)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/base.py", line 501, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: User() got an unexpected keyword argument 'email_adress'
+>>> User.objects.create(first_name = "Anindo", last_name = "khan", email_address = "blah@gmail.com", age = 12)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/base.py", line 740, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/base.py", line 777, in save_base
+    updated = self._save_table(
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/base.py", line 907, in _do_insert
+    return manager._insert([self], fields=fields, return_id=update_pk,
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1334, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1276, in as_sql
+    value_rows = [
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1277, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1277, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1218, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 789, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1429, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/fields/__init__.py", line 1390, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ["'blah@gmail.com' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+>>> 
+[1]+  Stopped                 python manage.py shell
+(djangoPy3Env) Anindos-MacBook-Air:users_shell anindokhan$ python manage.py makemigrations
+Migrations for 'main_app':
+  main_app/migrations/0002_auto_20201104_1934.py
+    - Alter field email_address on user
+(djangoPy3Env) Anindos-MacBook-Air:users_shell anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main_app, sessions
+Running migrations:
+  Applying main_app.0002_auto_20201104_1934... OK
+(djangoPy3Env) Anindos-MacBook-Air:users_shell anindokhan$ python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from main_app.models import *
+>>> User.objects.create(first_name ="Anindo", last_name="Khan", email_adress="blal@gmail.com", age =12)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/base.py", line 501, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: User() got an unexpected keyword argument 'email_adress'
+>>> User.objects.create(first_name ="Anindo", last_name="Khan", email_address="blal@gmail.com", age =12)
+<User: User object (1)>
+>>> User.objects.create(first_name ="Anino", last_name="Kan", email_address="bldal@gmail.com", age =412)
+<User: User object (2)>
+>>> User.objects.create(first_name ="Andino", last_name="Kanx", email_address="bldzal@gmail.com", age =712)
+<User: User object (3)>
+>>> User.objects.all()
+<QuerySet [<User: User object (1)>, <User: User object (2)>, <User: User object (3)>]>
+>>> User.objects.last()
+<User: User object (3)>
+>>> User.objects.first()
+<User: User object (1)>
+>>> User.objects.get(id=3)
+<User: User object (3)>
+>>> User.last_name ="pancakes"
+>>> User.save()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: save() missing 1 required positional argument: 'self'
+>>> pancakeman = User.objects.get(id=3)
+>>> pancakeman.last_name = "Pancakes"
+>>> pancakeman.save
+<bound method Model.save of <User: User object (3)>>
+>>> pancakeman.save()
+>>> print(pancakeman).last_name
+User object (3)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'NoneType' object has no attribute 'last_name'
+>>> print(pancakeman)
+User object (3)
+>>> print(pancakeman.last_name)
+Pancakes
+>>> second = User.objects.get(id=2)
+>>> second.delete()
+(1, {'main_app.User': 1})
+>>> User.objects.all().order_by("first_name")
+<QuerySet [<User: User object (3)>, <User: User object (1)>]>
+>>> User.objects.all().order_by("-first_name")
+<QuerySet [<User: User object (1)>, <User: User object (3)>]>
+>>> 

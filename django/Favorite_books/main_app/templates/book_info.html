@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Information</title>
+</head>
+<body>
+    <h1>Welcome {{user.first_name}} {{user.last_name}} </h1>
+    <form action="/logout" method="POST">
+        {%csrf_token%}
+        <button type="submit"> Logout </button>
+    </form>
+    <div id="main">
+            <h3>{{books.title}}</h3>
+            <p>Added by: {{books.uploaded_by.first_name}}</p>
+            <p>Added on: {{books.created_at}}</p>
+            <p>Last updated: {{books.updated_at}}</p>
+            <p>Description: {{books.descrption}}</p>
+            {% if request.session.user_id == books.uploaded_by.id%}
+            <a href="/books/{{books.id}}/edit"> Update </a>
+            {% endif %}
+            <br>
+            <a href="/books"> click here to go to the main page</a>
+    </div>
+    <div>
+        <h3> Users who favorited this book</h3>
+            {% for user in books.users_who_like.all%}
+            <p>{{user.first_name}}</p>
+            {%endfor%}
+        <a href="/books/{{books.id}}/user/{{user.id}}"> Add to favorites</a>
+        <a href="/books/{{books.id}}/user/{{user.id}}/unfavorite"> Remove from favorites</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold</title>
+    {% load static %}	
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  
+</head>
+<body>
+    <div id="container">
+        <p>Your Gold: {{request.session.total_gold}} </p>
+        <div class="boxes">
+            <div id="farm" class="blob">
+                <h3>Farm</h3>
+                <h4>(earns 10-20 gold)</h4>
+                <form action="/process_money" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="farm">
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div id="Cave" class="blob">
+                <h3>Cave</h3>
+                <h4>(earns 5-10 gold)</h4>
+                <form action="/process_money" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="Cave">
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div id="House" class="blob">
+                <h3>House</h3>
+                <h4>(earns 2-5 gold)</h4>
+                <form action="/process_money" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="House">
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+            <div id="Casino" class="blob">
+                <h3>Casino</h3>
+                <h4>(earns/takes 0-50 gold)</h4>
+                <form action="/process_money" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="Casino">
+                    <input type="submit" value="Find Gold!">
+                </form>
+            </div>
+        </div>
+        <div id="activities">
+            <p>activities</p>
+            {% for i in request.session.activities %}
+                <p> {{i}} </p>
+            {% endfor%}
+        </div>
+        <a href="/reset"> play again</a>
+    </div>
+</body>
+</html>

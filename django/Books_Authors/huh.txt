@@ -1,0 +1,650 @@
+Last login: Thu Nov  5 17:38:01 on ttys001
+Anindos-MacBook-Air:~ anindokhan$ ls
+Applications				Movies
+Desktop					Music
+Documents				Pictures
+Downloads				Public
+Khan_Anindo_VS_Assignment_1.mdoc	index.html
+Library					python_stack
+Anindos-MacBook-Air:~ anindokhan$ cd Desktop/
+Anindos-MacBook-Air:Desktop anindokhan$ ls
+Coding
+Dojo_Assignments
+Screen Shot 2020-10-14 at 3.32.46 PM.png
+Screen Shot 2020-11-05 at 2.10.59 PM.png
+Screen Shot 2020-11-05 at 2.11.05 PM.png
+Screen Shot 2020-11-05 at 4.08.41 PM.png
+untitled folder
+untitled folder 2
+Anindos-MacBook-Air:Desktop anindokhan$ cd Dojo_Assignments/
+Anindos-MacBook-Air:Dojo_Assignments anindokhan$ ls
+JavaScript		Web_Fundamentals	jQuery
+Python			end of stack project
+Anindos-MacBook-Air:Dojo_Assignments anindokhan$ cd Python/
+Anindos-MacBook-Air:Python anindokhan$ ls
+Python_OOP		django			python_fundamentals
+Anindos-MacBook-Air:Python anindokhan$ cd django/
+Anindos-MacBook-Air:django anindokhan$ ls
+Dojo_Ninjas			counter.zip
+Dojo_Ninjas.zip			great_number_game
+Dojo_Survey			great_number_game.zip
+Dojo_Survey.zip			my_environments
+First_Django_Project		ninja_gold
+First_Django_Project.zip	ninja_gold.zip
+Time_Display			users_shell
+Time_Display.zip		users_shell.zip
+counter
+Anindos-MacBook-Air:django anindokhan$ cd my_environments/
+Anindos-MacBook-Air:my_environments anindokhan$ source djangoPy3Env/bin/activate
+(djangoPy3Env) Anindos-MacBook-Air:my_environments anindokhan$ cd ..
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ ls
+Dojo_Ninjas			counter.zip
+Dojo_Ninjas.zip			great_number_game
+Dojo_Survey			great_number_game.zip
+Dojo_Survey.zip			my_environments
+First_Django_Project		ninja_gold
+First_Django_Project.zip	ninja_gold.zip
+Time_Display			users_shell
+Time_Display.zip		users_shell.zip
+counter
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ django-admin startproject Books_Authors
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ ls
+Books_Authors			counter
+Dojo_Ninjas			counter.zip
+Dojo_Ninjas.zip			great_number_game
+Dojo_Survey			great_number_game.zip
+Dojo_Survey.zip			my_environments
+First_Django_Project		ninja_gold
+First_Django_Project.zip	ninja_gold.zip
+Time_Display			users_shell
+Time_Display.zip		users_shell.zip
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ cd Books_Authors/
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 06, 2020 - 04:44:20
+Django version 2.2.4, using settings 'Books_Authors.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[06/Nov/2020 04:44:27] "GET / HTTP/1.1" 200 16348
+^C(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ 
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py startapp main_app
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 06, 2020 - 05:01:26
+Django version 2.2.4, using settings 'Books_Authors.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[06/Nov/2020 05:01:29] "GET / HTTP/1.1" 200 8
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 06, 2020 - 05:01:42
+Django version 2.2.4, using settings 'Books_Authors.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py", line 6
+    updated_at = models.DateTimeField(auto_now=True)
+TabError: inconsistent use of tabs and spaces in indentation
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py", line 6
+    updated_at = models.DateTimeField(auto_now=True)
+TabError: inconsistent use of tabs and spaces in indentation
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py", line 6
+    updated_at = models.DateTimeField(auto_now=True)
+TabError: inconsistent use of tabs and spaces in indentation
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py", line 6
+    updated_at = models.DateTimeField(auto_now=True)
+TabError: inconsistent use of tabs and spaces in indentation
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 923, in get_code
+  File "<frozen importlib._bootstrap_external>", line 853, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py", line 11
+    updated_at = models.DateTimeField(auto_now=True)
+TabError: inconsistent use of tabs and spaces in indentation
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py", line 2, in <module>
+    class Book(model.Models):
+NameError: name 'model' is not defined
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py", line 2, in <module>
+    class Book(models.Models):
+AttributeError: module 'django.db.models' has no attribute 'Models'
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Books_Authors/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 06, 2020 - 05:21:12
+Django version 2.2.4, using settings 'Books_Authors.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+^C(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ 
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py makemigrations
+Migrations for 'main_app':
+  main_app/migrations/0001_initial.py
+    - Create model Author
+    - Create model Book
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main_app, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying main_app.0001_initial... OK
+  Applying sessions.0001_initial... OK
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$  python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from main_app.models import *
+>>> Book.objects.create(title= C sharp)
+  File "<console>", line 1
+    Book.objects.create(title= C sharp)
+                                 ^
+SyntaxError: invalid syntax
+>>> Book.objects.create(title= C Sharp)
+  File "<console>", line 1
+    Book.objects.create(title= C Sharp)
+                                 ^
+SyntaxError: invalid syntax
+>>> Books.onjects.create(title="C Sharp")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Books' is not defined
+>>> Book.objects.create(title="C Sharp")
+<Book: Book object (1)>
+>>> Book.objects.create(title="Java")
+<Book: Book object (2)>
+>>> Book.objects.create(title="Python")
+<Book: Book object (3)>
+>>> Book.objects.create(title="PHP")
+<Book: Book object (4)>
+>>> Book.objects.create(title="")
+<Book: Book object (5)>
+>>> 5= Book.objects.get (id =5)
+  File "<console>", line 1
+    5= Book.objects.get (id =5)
+    ^
+SyntaxError: cannot assign to literal
+>>> num5= Book.objects.get (id =5)
+>>> num5.delete()
+(1, {'main_app.Book': 1})
+>>> Book.objects.all().values(0
+... Book.objects.all().values()
+  File "<console>", line 2
+    Book.objects.all().values()
+    ^
+SyntaxError: invalid syntax
+>>> Book.objects.create(title="Ruby")
+<Book: Book object (6)>
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 06, 2020 - 23:24:03
+Django version 2.2.4, using settings 'Books_Authors.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[06/Nov/2020 23:24:08] "GET / HTTP/1.1" 200 8
+^C(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ 
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from main_app import *
+>>> Author.objects.create()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Author' is not defined
+>>> Author.objects.create(first_name= "Jane", last_name ="Austen")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Author' is not defined
+>>> from main_app.models import *
+>>> Author.objects.create(first_name = "Jane",last_name = "Austen")
+<Author: Author object (1)>
+>>> Author.objects.create(first_name = "Emily",last_name = "Dickinson")
+<Author: Author object (2)>
+>>> Author.objects.create(first_name = "Fyodor",last_name = "Dostoevsky")
+<Author: Author object (3)>
+>>> Author.objects.create(first_name = "William",last_name = "Shakespear")
+<Author: Author object (4)>
+>>> Author.objects.create(first_name = "Lau",last_name = "Tzu")
+<Author: Author object (5)>
+>>> exit()
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py makemigrations
+You are trying to add a non-nullable field 'notes' to author without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> exit
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py makemigrations
+You are trying to add a non-nullable field 'notes' to author without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> "default"
+Migrations for 'main_app':
+  main_app/migrations/0002_author_notes.py
+    - Add field notes to author
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main_app, sessions
+Running migrations:
+  Applying main_app.0002_author_notes... OK
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from main_app.models import *
+>>> C_sharp = Book.objects.get(id=1)
+>>> C_sharp.name = "C#"
+>>> Book.objects.all().values()
+<QuerySet [{'id': 1, 'title': 'C Sharp', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 0, 491922, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 0, 493529, tzinfo=<UTC>)}, {'id': 2, 'title': 'Java', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562667, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562747, tzinfo=<UTC>)}, {'id': 3, 'title': 'Python', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769680, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769788, tzinfo=<UTC>)}, {'id': 4, 'title': 'PHP', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588209, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588283, tzinfo=<UTC>)}, {'id': 6, 'title': 'Ruby', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 44, 18, 846850, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 44, 18, 846932, tzinfo=<UTC>)}]>
+>>> C_sharp.title = "C#"
+>>> Book.objects.all().values()
+<QuerySet [{'id': 1, 'title': 'C Sharp', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 0, 491922, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 0, 493529, tzinfo=<UTC>)}, {'id': 2, 'title': 'Java', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562667, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562747, tzinfo=<UTC>)}, {'id': 3, 'title': 'Python', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769680, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769788, tzinfo=<UTC>)}, {'id': 4, 'title': 'PHP', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588209, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588283, tzinfo=<UTC>)}, {'id': 6, 'title': 'Ruby', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 44, 18, 846850, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 44, 18, 846932, tzinfo=<UTC>)}]>
+>>> CS=Book.objects.get(id =1)
+>>> CS.title="C#"
+>>> Book.onjects.all().values()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Book' has no attribute 'onjects'
+>>> Book.objects.all().values()
+<QuerySet [{'id': 1, 'title': 'C Sharp', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 0, 491922, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 0, 493529, tzinfo=<UTC>)}, {'id': 2, 'title': 'Java', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562667, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562747, tzinfo=<UTC>)}, {'id': 3, 'title': 'Python', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769680, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769788, tzinfo=<UTC>)}, {'id': 4, 'title': 'PHP', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588209, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588283, tzinfo=<UTC>)}, {'id': 6, 'title': 'Ruby', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 44, 18, 846850, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 44, 18, 846932, tzinfo=<UTC>)}]>
+>>> CS.save()
+>>> Book.objects.all().values()
+<QuerySet [{'id': 1, 'title': 'C#', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 0, 491922, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 44, 27, 958465, tzinfo=<UTC>)}, {'id': 2, 'title': 'Java', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562667, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562747, tzinfo=<UTC>)}, {'id': 3, 'title': 'Python', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769680, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769788, tzinfo=<UTC>)}, {'id': 4, 'title': 'PHP', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588209, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588283, tzinfo=<UTC>)}, {'id': 6, 'title': 'Ruby', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 44, 18, 846850, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 44, 18, 846932, tzinfo=<UTC>)}]>
+>>> Author.objects.get(id=4)
+<Author: Author object (4)>
+>>> Bill= Author.objects.get(id=4)
+>>> Bill.first_name ="Bill"
+>>> Bill.save()
+>>> Author.objects.all().values()
+<QuerySet [{'id': 1, 'first_name': 'Jane', 'last_name': 'Austen', 'notes': 'default', 'created_at': datetime.datetime(2020, 11, 6, 23, 27, 52, 185650, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 27, 52, 185763, tzinfo=<UTC>)}, {'id': 2, 'first_name': 'Emily', 'last_name': 'Dickinson', 'notes': 'default', 'created_at': datetime.datetime(2020, 11, 6, 23, 30, 14, 562507, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 30, 14, 562596, tzinfo=<UTC>)}, {'id': 3, 'first_name': 'Fyodor', 'last_name': 'Dostoevsky', 'notes': 'default', 'created_at': datetime.datetime(2020, 11, 6, 23, 30, 56, 28999, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 30, 56, 29081, tzinfo=<UTC>)}, {'id': 4, 'first_name': 'Bill', 'last_name': 'Shakespear', 'notes': 'default', 'created_at': datetime.datetime(2020, 11, 6, 23, 31, 17, 67045, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 47, 3, 665701, tzinfo=<UTC>)}, {'id': 5, 'first_name': 'Lau', 'last_name': 'Tzu', 'notes': 'default', 'created_at': datetime.datetime(2020, 11, 6, 23, 33, 32, 195100, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 33, 32, 195145, tzinfo=<UTC>)}]>
+>>> author_one = Author.objects.get(id =1)
+>>> book_one = Author.objects.get(id=1)
+>>> book_two = Author.objects.get (d=2)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/query.py", line 399, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1315, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1190, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1049, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1419, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'd' into field. Choices are: created_at, first_name, id, last_name, notes, updated_at
+>>> book_two = Author.objects.get (id=2)
+>>> exit()
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py makemigrations
+Migrations for 'main_app':
+  main_app/migrations/0003_author_books.py
+    - Add field books to author
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main_app, sessions
+Running migrations:
+  Applying main_app.0003_author_books... OK
+(djangoPy3Env) Anindos-MacBook-Air:Books_Authors anindokhan$ python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from main_app.models import *
+>>> Author_one = Author.objects.get(id=1)
+>>> book_one= Book.objects.get (id=1)
+>>> book_two= Book.objects.get(id=2)
+>>> Author_one.books.add(book_one)
+>>> Author_one.books.add(book_two)
+>>> Author_two = Author.objects.get(id=2)
+>>> book1 = Books.objects.get (id=1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Books' is not defined
+>>> book1 = Book.objects.get (id=1)
+>>> book2 = Book.objects.get (id=2)
+>>> book3 = Book.objects.get (id=3)
+>>> Author_two.books.add(book1)
+>>> Author_two.books.add(book2)
+>>> Author_two.books.add(book3)
+>>> Author_3 = Author.objects.get(id=3)
+>>> boo1 = Book.objects.get(id=1)
+>>> boo2 = Book.objects.get(id=2)
+>>> boo3 = Book.objects.get(id=3)
+>>> boo4 = Book.objects.get(id=4)
+>>> Author_3.books.add(boo1)
+>>> Author_3.books.add(boo2)
+>>> Author_3.books.add(boo3)
+>>> Author_3.books.add(boo4)
+>>> Author_four = Author.objects.get(id=4)
+>>> bok1 =Book.objects.get(id=1)
+>>> bok2 =Book.objects.get(id=2)
+>>> bok3 =Book.objects.get(id=3)
+>>> bok4 =Book.objects.get(id=4)
+>>> bok5 =Book.objects.get(id=6)
+>>> Author_four.books.add(bok1)
+>>> Author_four.books.add(bok2)
+>>> Author_four.books.add(bok3)
+>>> Author_four.books.add(bok4)
+>>> Author_four.books.add(bok5)
+>>> bookthree = Book.objects.get(id=3)
+>>> bookthree.title
+'Python'
+>>> bookthree.authors
+<django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager object at 0x108b10970>
+>>> bookthree.authors.all()
+<QuerySet [<Author: Author object (2)>, <Author: Author object (3)>, <Author: Author object (4)>]>
+>>> bookthree.authors.all().values()
+<QuerySet [{'id': 2, 'first_name': 'Emily', 'last_name': 'Dickinson', 'notes': 'default', 'created_at': datetime.datetime(2020, 11, 6, 23, 30, 14, 562507, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 30, 14, 562596, tzinfo=<UTC>)}, {'id': 3, 'first_name': 'Fyodor', 'last_name': 'Dostoevsky', 'notes': 'default', 'created_at': datetime.datetime(2020, 11, 6, 23, 30, 56, 28999, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 30, 56, 29081, tzinfo=<UTC>)}, {'id': 4, 'first_name': 'Bill', 'last_name': 'Shakespear', 'notes': 'default', 'created_at': datetime.datetime(2020, 11, 6, 23, 31, 17, 67045, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 47, 3, 665701, tzinfo=<UTC>)}]>
+>>> three_book = Book.objects.get(id=3)
+>>> first_Author = three_book.authors.first()
+>>> three_book.authors.remove(first_author)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'first_author' is not defined
+>>> three_book.authors.remove(first_Author)
+>>> fifth_author = Author.objects.get(id=5)
+>>> boook2= Book.objects.get(id=2)
+>>> fifth_author.books.add(boook2)
+>>> author_third = Author.objects.get(id=3)
+>>> author_third.books.all()
+<QuerySet [<Book: Book object (1)>, <Book: Book object (2)>, <Book: Book object (3)>, <Book: Book object (4)>]>
+>>> author_third.books.all().values()
+<QuerySet [{'id': 1, 'title': 'C#', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 0, 491922, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 44, 27, 958465, tzinfo=<UTC>)}, {'id': 2, 'title': 'Java', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562667, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 14, 562747, tzinfo=<UTC>)}, {'id': 3, 'title': 'Python', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769680, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 23, 769788, tzinfo=<UTC>)}, {'id': 4, 'title': 'PHP', 'desc': '', 'created_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588209, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 5, 42, 33, 588283, tzinfo=<UTC>)}]>
+>>> book_five = Book.objects.get(id=6)
+>>> book_five.authors.all().values()
+<QuerySet [{'id': 4, 'first_name': 'Bill', 'last_name': 'Shakespear', 'notes': 'default', 'created_at': datetime.datetime(2020, 11, 6, 23, 31, 17, 67045, tzinfo=<UTC>), 'updated_at': datetime.datetime(2020, 11, 6, 23, 47, 3, 665701, tzinfo=<UTC>)}]>
+>>> 

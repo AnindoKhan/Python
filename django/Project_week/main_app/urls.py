@@ -1,0 +1,27 @@
+from django.urls import path     
+from . import views
+urlpatterns = [
+    path('', views.index),
+    path('registration', views.register),
+    path('home', views.home),
+    path('logout', views.logout),
+    path('login', views.login),	   
+    path('newexercise', views.newExercise),
+    path('add_exercise', views.addExercise),
+    path('exercise/<int:exercise_id>/edit', views.editExercise),
+    path('exercise/<int:exercise_id>/update', views.updateExercise),
+    path('exercise/<int:exercise_id>/delete', views.exerciseDelete),
+    path('newmeal', views.newMeal),
+    path('addMeal', views.addMeal),
+    path('meal/<int:meal_id>/edit', views.updateMeal),
+    path('meal/<int:meal_id>/change', views.editMeal),
+    path('meal/<int:meal_id>/delete', views.deleteMeal),
+    path('newgoal', views.newGoal),
+    path('add_goal', views.addGoal),
+    path('goal/<int:goal_id>/edit', views.goalUpdate),
+    path('goal/<int:goal_id>/update', views.goalEdit),
+    path('goal/<int:goal_id>/delete', views.goalDelete),
+    path('meals', views.meal),
+    path('exercises', views.exercises),
+    path('goals', views.goals),
+]

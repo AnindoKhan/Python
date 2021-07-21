@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Information</title>
+</head>
+<body>
+    <h1>Hello {{user.first_name}}! This is your trip details</h1>
+    <form action="/logout" method="POST">
+        {%csrf_token%}
+        <button type="submit"> Logout </button>
+    </form>
+    <form action="/dashboard" method="POST">
+        {%csrf_token%}
+        <button type="submit"> dashboard </button>
+    </form>
+
+        
+        <p>{{trip.destination}}</p>
+        <p>{{trip.start_date}}</p>
+        <p>{{trip.end_date}}</p>
+        <p>{{trip.plan}}</p>
+        
+</body>
+</html>

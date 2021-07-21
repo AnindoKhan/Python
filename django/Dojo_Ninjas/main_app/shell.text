@@ -1,0 +1,724 @@
+Last login: Wed Nov  4 17:14:52 on ttys000
+Anindos-MacBook-Air:~ anindokhan$ ls
+Applications				Movies
+Desktop					Music
+Documents				Pictures
+Downloads				Public
+Khan_Anindo_VS_Assignment_1.mdoc	index.html
+Library					python_stack
+Anindos-MacBook-Air:~ anindokhan$ cd Desktop/
+Anindos-MacBook-Air:Desktop anindokhan$ ls
+Coding
+Dojo_Assignments
+Screen Shot 2020-10-14 at 3.32.46 PM.png
+untitled folder
+untitled folder 2
+Anindos-MacBook-Air:Desktop anindokhan$ cd Dojo_Assignments/
+Anindos-MacBook-Air:Dojo_Assignments anindokhan$ ls
+JavaScript		Web_Fundamentals	jQuery
+Python			end of stack project
+Anindos-MacBook-Air:Dojo_Assignments anindokhan$ cd Python/
+Anindos-MacBook-Air:Python anindokhan$ ls
+Python_OOP		django			python_fundamentals
+Anindos-MacBook-Air:Python anindokhan$ cd django/
+Anindos-MacBook-Air:django anindokhan$ ls
+Dojo_Survey			great_number_game
+Dojo_Survey.zip			great_number_game.zip
+First_Django_Project		my_environments
+First_Django_Project.zip	ninja_gold
+Time_Display			ninja_gold.zip
+Time_Display.zip		users_shell
+counter				users_shell.zip
+counter.zip
+Anindos-MacBook-Air:django anindokhan$ cd my_environments/
+Anindos-MacBook-Air:my_environments anindokhan$ source djangoPy3Env/bin/activate
+(djangoPy3Env) Anindos-MacBook-Air:my_environments anindokhan$ cd ..
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ ls
+Dojo_Survey			great_number_game
+Dojo_Survey.zip			great_number_game.zip
+First_Django_Project		my_environments
+First_Django_Project.zip	ninja_gold
+Time_Display			ninja_gold.zip
+Time_Display.zip		users_shell
+counter				users_shell.zip
+counter.zip
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ django-admin startproject Dojo_Ninjas
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ ls
+Dojo_Ninjas			counter.zip
+Dojo_Survey			great_number_game
+Dojo_Survey.zip			great_number_game.zip
+First_Django_Project		my_environments
+First_Django_Project.zip	ninja_gold
+Time_Display			ninja_gold.zip
+Time_Display.zip		users_shell
+counter				users_shell.zip
+(djangoPy3Env) Anindos-MacBook-Air:django anindokhan$ cd Dojo_Ninjas/
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 05, 2020 - 21:15:03
+Django version 2.2.4, using settings 'Dojo_Ninjas.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Nov/2020 21:15:09] "GET / HTTP/1.1" 200 16348
+[05/Nov/2020 21:15:09] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[05/Nov/2020 21:15:10] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[05/Nov/2020 21:15:10] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[05/Nov/2020 21:15:10] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[05/Nov/2020 21:15:10] "GET /favicon.ico HTTP/1.1" 404 1977
+^C(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ 
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py startapp main_app
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 387, in check
+    all_issues = self._run_checks(
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/Dojo_Ninjas/urls.py", line 20, in <module>
+    path('', include('main_app.urls')),
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py", line 3
+    render HttpResponse("is this working?")
+           ^
+SyntaxError: invalid syntax
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 387, in check
+    all_issues = self._run_checks(
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/Dojo_Ninjas/urls.py", line 20, in <module>
+    path('', include('main_app.urls')),
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py", line 3
+    render HttpResponse ("is this working?")
+           ^
+SyntaxError: invalid syntax
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 387, in check
+    all_issues = self._run_checks(
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/Dojo_Ninjas/urls.py", line 20, in <module>
+    path('', include('main_app.urls')),
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py", line 3
+    render HttpResponse (request "is this working?")
+           ^
+SyntaxError: invalid syntax
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 387, in check
+    all_issues = self._run_checks(
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/Dojo_Ninjas/urls.py", line 20, in <module>
+    path('', include('main_app.urls')),
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py", line 3
+    return HttpResponse (request "is this working?")
+                                 ^
+SyntaxError: invalid syntax
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 387, in check
+    all_issues = self._run_checks(
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 398, in check
+    for pattern in self.url_patterns:
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 579, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/resolvers.py", line 572, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/Dojo_Ninjas/urls.py", line 20, in <module>
+    path('', include('main_app.urls')),
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 790, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/urls.py", line 2, in <module>
+    from . import views
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py", line 3
+    return HttpResponse (request "is this working?")
+                                 ^
+SyntaxError: invalid syntax
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 05, 2020 - 21:21:17
+Django version 2.2.4, using settings 'Dojo_Ninjas.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 05, 2020 - 21:21:21
+Django version 2.2.4, using settings 'Dojo_Ninjas.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Nov/2020 21:21:25] "GET / HTTP/1.1" 200 16
+/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/Dojo_Ninjas/main_app/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 05, 2020 - 21:37:38
+Django version 2.2.4, using settings 'Dojo_Ninjas.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+python manage.py makemigrations
+python manage.py migrate
+^C(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py makemigrations
+-bash: pyhothon: command not found
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying sessions.0001_initial... OK
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ 
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py makemigrations
+Migrations for 'main_app':
+  main_app/migrations/0001_initial.py
+    - Create model dojos
+    - Create model ninjas
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ 
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$  python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from main_app.models import *
+>>> exit()
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main_app, sessions
+Running migrations:
+  Applying main_app.0001_initial... OK
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from main_app.models import *
+>>> dojo.objects.create(name = "bob", city = "seattle", state = "WA")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'dojo' is not defined
+>>> dojos.objects.create(name = "bob", city = "seattle", state = "WA")
+<dojos: dojos object (1)>
+>>> dojos.objects.create(name = "sally", city ="settle", state = "WA"
+... dojos.objects.create(name = "sally", city ="settle", state = "WA")
+  File "<console>", line 2
+    dojos.objects.create(name = "sally", city ="settle", state = "WA")
+    ^
+SyntaxError: invalid syntax
+>>> dojos.objects.create(name = "sally", city ="settle", state = "WA")
+<dojos: dojos object (2)>
+>>> dojos.objects.create(name = "joey", city ="seattle", state = "WA")
+<dojos: dojos object (3)>
+>>> one = dojos.objects.get(id=1)
+>>> one.delete()
+(1, {'main_app.dojos': 1})
+>>> two =  dojos.onjects.get(id=2)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'dojos' has no attribute 'onjects'
+>>> two = dojos.objects.get(id=2)
+>>> two.delete()
+(1, {'main_app.dojos': 1})
+>>> dojos.objects.all()
+<QuerySet [<dojos: dojos object (3)>]>
+>>> three = dojos.objects.get(id=3)
+>>> three.delete()
+(1, {'main_app.dojos': 1})
+>>> dojos.objects.create(name="joe" city="seattle" state = "WA")
+  File "<console>", line 1
+    dojos.objects.create(name="joe" city="seattle" state = "WA")
+                                    ^
+SyntaxError: invalid syntax
+>>> dojos.objects.create(name="joe" city = "seattle" state = "WA")
+  File "<console>", line 1
+    dojos.objects.create(name="joe" city = "seattle" state = "WA")
+                                    ^
+SyntaxError: invalid syntax
+>>> dojos.objects.create(name = "joe", city ="seattle", state= "WA")
+<dojos: dojos object (4)>
+>>> dojos.objects.all()
+<QuerySet [<dojos: dojos object (4)>]>
+>>> one = dojo.objects.get(id=1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'dojo' is not defined
+>>> one = dojos.objects.get(id=1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/anindokhan/Desktop/Dojo_Assignments/Python/django/my_environments/djangoPy3Env/lib/python3.9/site-packages/django/db/models/query.py", line 406, in get
+    raise self.model.DoesNotExist(
+main_app.models.dojos.DoesNotExist: dojos matching query does not exist.
+>>> dojos.objects.all().values()
+<QuerySet [{'id': 4, 'name': 'joe', 'city': 'seattle', 'state': 'WA'}]>
+>>> dojos.objects.create(name = "bob", city ="seattle", state= "WA")
+<dojos: dojos object (5)>
+>>> dojos.objects.create(name = "bill", city ="seattle", state= "WA")
+<dojos: dojos object (6)>
+>>> python manage.py makemigrations
+  File "<console>", line 1
+    python manage.py makemigrations
+           ^
+SyntaxError: invalid syntax
+>>> python manage.py makemigrations
+  File "<console>", line 1
+    python manage.py makemigrations
+           ^
+SyntaxError: invalid syntax
+>>> exit()
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py makemigrations
+Did you rename the main_app.ninjas model to Dojo? [y/N] y
+Migrations for 'main_app':
+  main_app/migrations/0002_auto_20201105_2226.py
+    - Create model Ninja
+    - Delete model dojos
+    - Rename model ninjas to Dojo
+    - Add field dojo to ninja
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main_app, sessions
+Running migrations:
+  Applying main_app.0002_auto_20201105_2226... OK
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> ninja_1 = Dojo.objects.get(id=1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Dojo' is not defined
+>>> Dojo.objects.create(name="steve", city="vegas", state="NV")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Dojo' is not defined
+>>> exit()
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py makemigrations
+No changes detected
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main_app, sessions
+Running migrations:
+  No migrations to apply.
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> Ninja.objects.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Ninja' is not defined
+>>> from main_app.models import *
+>>> Ninja.objects.all()
+<QuerySet []>
+>>> Dojo.objects.all()
+<QuerySet []>
+>>> Dojo.objects.create(name="bob", city = "seattle", state ="WA")
+<Dojo: Dojo object (1)>
+>>> Dojo.objects.create(name="bill", city = "seattle", state ="WA")
+<Dojo: Dojo object (2)>
+>>> Dojo.objects.create(name="barry", city = "seattle", state ="WA")
+<Dojo: Dojo object (3)>
+>>> ninja_1 = Dojo.objects.get (id =1)
+>>> Dojo_1 = Dojo.objects.get (id =1)
+>>> ninja_1 = Ninja.objects.create(dojo =Dojo_1, name = "kyle", city ="reno", state ="NV")
+>>> ninja_2 = Ninja.objects.create(dojo =Dojo_1, name = "kele", city ="reno", state ="NV")
+>>> ninja_3 = Ninja.objects.create(dojo =Dojo_1, name = "kell", city ="reno", state ="NV")
+>>> Dojo_2 = Dojo.objects.get (id=2)
+>>> ninja1 = Ninja.objects.create(dojo = Dojo_2, name ="sally", city="portland", state = "OR")
+>>> ninja2 = Ninja.objects.create(dojo = Dojo_2, name ="sarah", city="portland", state = "OR")
+>>> ninja3 = Ninja.objects.create(dojo = Dojo_2, name ="sam", city="portland", state = "OR")
+>>> Dojo_3 = Dojo.objects.get(id=3)
+>>> 1ninja =  Ninja.objects.create(dojo = Dojo_3, name="chad", city = "seattle",state = "WA")
+  File "<console>", line 1
+    1ninja =  Ninja.objects.create(dojo = Dojo_3, name="chad", city = "seattle",state = "WA")
+     ^
+SyntaxError: invalid syntax
+>>> 1ninja =  Ninja.objects.create(dojo = Dojo_3, name="chad", city = "seattle",state = "WA")
+  File "<console>", line 1
+    1ninja =  Ninja.objects.create(dojo = Dojo_3, name="chad", city = "seattle",state = "WA")
+     ^
+SyntaxError: invalid syntax
+>>> 1ninja =  Ninja.objects.create(dojo = Dojo_3, name="chad", city = "seattle",state = "WA")
+  File "<console>", line 1
+    1ninja =  Ninja.objects.create(dojo = Dojo_3, name="chad", city = "seattle",state = "WA")
+     ^
+SyntaxError: invalid syntax
+>>> ninja3 =Ninja.objects.create(dojo = Dojo_2, name ="sam", city="portland", state = "OR")
+>>> 1ninja =Ninja.objects.create(dojo= Dojo_3, name ="chad", city="dalls", state ="TX")
+  File "<console>", line 1
+    1ninja =Ninja.objects.create(dojo= Dojo_3, name ="chad", city="dalls", state ="TX")
+     ^
+SyntaxError: invalid syntax
+>>> ninja4 =Ninja.objects.create(dojo= Dojo_3, name ="chad", city="dalls", state ="TX")
+>>> ninja5 =Ninja.objects.create(dojo= Dojo_3, name ="brad", city="dalls", state ="TX")
+>>> ninja6 =Ninja.objects.create(dojo= Dojo_3, name ="sad", city="dalls", state ="TX")
+>>> Dojo.objects.get(id=1)
+<Dojo: Dojo object (1)>
+>>> this_dojo = Dojo.objects.get(id=1)
+>>> this_dojo.ninjas.all()
+<QuerySet [<Ninja: Ninja object (1)>, <Ninja: Ninja object (2)>, <Ninja: Ninja object (3)>]>
+>>> last_dojo = Dojo.objects.get(id=3)
+>>> last_dojo.ninjas.all().values()
+<QuerySet [{'id': 8, 'dojo_id': 3, 'name': 'chad', 'city': 'dalls', 'state': 'TX'}, {'id': 9, 'dojo_id': 3, 'name': 'brad', 'city': 'dalls', 'state': 'TX'}, {'id': 10, 'dojo_id': 3, 'name': 'sad', 'city': 'dalls', 'state': 'TX'}]>
+>>> Ninja.objects.all
+<bound method BaseManager.all of <django.db.models.manager.Manager object at 0x10d8d0c70>>
+>>> Ninja.objects.all()
+<QuerySet [<Ninja: Ninja object (1)>, <Ninja: Ninja object (2)>, <Ninja: Ninja object (3)>, <Ninja: Ninja object (4)>, <Ninja: Ninja object (5)>, <Ninja: Ninja object (6)>, <Ninja: Ninja object (7)>, <Ninja: Ninja object (8)>, <Ninja: Ninja object (9)>, <Ninja: Ninja object (10)>]>
+>>> this_ninja_dojo= Ninja.object.get(id=10)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Ninja' has no attribute 'object'
+>>> this_ninja_dojo= Ninja.objects.get(id=10)
+>>> this_ninja_dojo.values()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Ninja' object has no attribute 'values'
+>>> this_ninja_dojo.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Ninja' object has no attribute 'all'
+>>> this_ninja_dojo
+<Ninja: Ninja object (10)>
+>>> this_ninja_dojo.name
+'sad'
+>>> this_ninja_dojo.dojo
+<Dojo: Dojo object (3)>
+>>> this_ninja_dojo.name
+'sad'
+>>> this_ninja_dojo.Dojo.name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Ninja' object has no attribute 'Dojo'
+>>> this_ninja_dojo.dojo.name
+'barry'
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> exit()
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to ninja without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 
+Please select a valid option: 2
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to dojo without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> python manage.py migrate
+Invalid input: invalid syntax (<string>, line 1)
+>>> exit()
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to dojo without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> 1
+Migrations for 'main_app':
+  main_app/migrations/0003_dojo_desc.py
+    - Add field desc to dojo
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py makemigrations
+No changes detected
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main_app, sessions
+Running migrations:
+  Applying main_app.0003_dojo_desc... OK
+(djangoPy3Env) Anindos-MacBook-Air:Dojo_Ninjas anindokhan$ python manage.py shell
+Python 3.9.0 (v3.9.0:9cf6752276, Oct  5 2020, 11:29:23) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> Dojo.objects.create(name="lol", city = "lol", state="WA", desc ="yayayay")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Dojo' is not defined
+>>> from main_app.models import *
+>>> Dojo.objects.create(name="lol", city = "lol", state="WA", desc ="yayayay")
+<Dojo: Dojo object (4)>
+>>> 
+>>> 

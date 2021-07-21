@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+  }
+.bg {
+    /* The image used */
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg');
+    Center and scale the image nicely 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+.login{
+    color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main{
+    background-image: url('../img/Gym-Background1.png');
+}
+.meal{
+    background-image: url('../img/food.jpg');
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+.exercise{
+    background-image: url('../img/exercise_image.jpg');
+}
+.goal{
+    background-image: url('../img/goals.jpg');
+}

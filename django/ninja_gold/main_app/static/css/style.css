@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    margin: 0 auto;
+    width: 970px;
+}
+
+.blob{
+    border: solid black 1px;
+    display: inline-block;
+    font-size: 15px;
+    padding: 3px;
+    margin: 5px
+}
+#activities{
+    border: black solid 1px;
+    height: 500px;
+    width: 550px;
+    margin-top: 10px;
+}
+a{
+    height: 20px;
+    width: 40px;
+    border: solid black 1px;
+}

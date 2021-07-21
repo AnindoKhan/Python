@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1> Welcome {{user.first_name}} {{user.last_name}} </h1>
+        <p>Coding Dojo Wall</p>
+        <form action="/logout" method="POST">
+            {%csrf_token%}
+            <button type="submit"> Logout </button>
+        </form>
+    </div>
+    <div class="creating_a_post">
+        <p>Post a message</p>
+        <form action="/wall_message" method="post">
+            {%csrf_token%}
+            <textarea name="messages" id="" cols="30" rows="10"></textarea>
+            <button type="submit"> Post </button>
+        </form>
+    </div>
+    <div id="display_messages">
+        {% for message in messages.all %}
+        <div id="individual_message">
+            <div>
+                <h3>{{message.user.first_name}} {{message.user.last_name}} {{message.user.created_at}}</h3>
+                <p>{{message.message_text}}</p>
+                {% if request.session.user_id == message.user.id%}
+                <form action="/wall_message/{{message.id}}/delete" method="post">
+                    {%csrf_token%}
+                    <button type="submit"> Delete Message </button>
+                </form>
+                {% endif %}
+            </div>
+            <div id="comment_box">
+                <form action="/wall_comment/{{message.id}}" method="post">
+                    {%csrf_token%}
+                    <textarea name="comment" id="" cols="15"
+                        rows="5"> Leave {{message.user.first_name}} a comment</textarea>
+                    <button type="submit"> Comment </button>
+                </form>
+            </div>
+            <div id="all_comments">
+                {% for comment in message.comments.all %}
+                <div id="each_comment">
+                    <h3>{{comment.user.first_name}} {{comment.user.last_name}} {{comment.updated_at}}</h3>
+                    <p>{{comment.comment_text}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <!--End of user_messages-->>
+</body>
+
+</html>
+
